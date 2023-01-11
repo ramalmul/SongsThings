@@ -31,11 +31,12 @@ for row in artist_nice:
         # dic["song"]=songname
         tempsong=actualsong[3].replace("-"," ").split("chord")
         tempsong2 = tempsong[0].split("tabs")
+        tempartist = actualsong[2].replace("-"," ")
         # print(tempsong2)
         # ch=tr.split("chord")
         # ch1 = str(tr)
         songlist.append(str(tempsong2[0]))
-        artistlist.append(str(actualsong[2]))
+        artistlist.append(str(tempartist))
 
 for x in range(len(songlist)):
     print(artistlist[x]+ " - "+ songlist[x])
